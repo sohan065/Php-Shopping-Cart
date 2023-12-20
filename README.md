@@ -16,12 +16,17 @@ cd php_crud
 #### Database 
 
 ```make a data base name crud```
-###table
-```create a table which name is users and columns are id,name,email```
-###configure connnection
-```go to connection.php and change your db name and password```
+### Table
+```bash 
+create a table which name is users and columns are id,name,email
+```
+### Configure connnection
+```bash 
+go to connection.php and change your db name and password
+```
 
-Then run the index.php file 
+### Then run the index.php file
+
 
 
 
