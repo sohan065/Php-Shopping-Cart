@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  padding: 20px;
+  height: 60px;
+  background: rgb(7, 7, 7);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-title a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 2px;
+}
+ul li {
+  width: 60px;
+  text-transform: uppercase;
+}
+ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}

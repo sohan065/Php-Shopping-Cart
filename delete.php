@@ -10,7 +10,7 @@ if (isset($_GET['id'])) {
     if (empty($id)) {
         echo " id is  required";
     } else {
-        $sql = "delete  from `users` where id=$id";
+        $sql = "delete  from `products` where id=$id";
 
         $result = mysqli_query($con, $sql);
 
