@@ -18,7 +18,10 @@ if (isset($_POST['submit'])) {
     // Basic validation: Check if name, price, and quantity are not empty
     if (empty($product_name) || empty($price) || empty($quantity)) {
         echo "Name, price, and quantity are required fields";
+    } else if (!is_numeric($quantity) || $quantity < 0) {
+        echo "Quantity must be a non-negative number";
     } else {
+
         // Check if the product name already exists in the cart
         $checkQuery = "SELECT * FROM `carts` WHERE product_name = '$product_name'";
         $checkResult = mysqli_query($con, $checkQuery);
@@ -88,12 +91,13 @@ if (isset($_POST['submit'])) {
                         <p class="card-text">Details : ' . $product['description'] . '
                         </p>
                         <p>Price : ' . $product['price'] . '</p>
+                         <input type="number" name="quantity" value="1" placeholder="quantity" required>
                        <button class="btn btn-primary" name="submit">Add To Cart</button>
                     </div>
                 </div>
                     <input type="text" name="name" value="' . $product['name'] . '" hidden>
                     <input type="number" name="price" value="' . $product['price'] . '" hidden>
-                    <input type="number" name="quantity" value="' . $product['quantity'] . '" hidden>
+                   
     </form>
     </div>';
         }
