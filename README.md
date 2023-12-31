@@ -13,20 +13,31 @@ Go to the project directory.
 cd php_crud
 ```
 
-#### Database 
+#### Database Create
 
-```make a data base name crud```
-### Table
-```bash 
-create a table which name is users and columns are id,name,email
+`create a data base name shopping_cart`
+
+### Database Configuration
+
+Go to project directory and Configure your database in `connection.php` file.
+
 ```
-### Configure connnection
-```bash 
-go to connection.php and change your db name and password
+
+$serverName = your_server_name;
+$database = your_db_name;
+$username = your_db_username;
+$password = your_db_password;
+
 ```
+
+Then run the project if you are in local machine
+
+```bash
+php -s localhost:5000
+```
+
+It will serve the app on `http://localhost:5000/` .
+
+if you want you can change your port number.
 
 ### Then run the index.php file
-
-
-
-
