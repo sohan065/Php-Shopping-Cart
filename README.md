@@ -40,4 +40,6 @@ It will serve the app on `http://localhost:5000/` .
 
 if you want you can change your port number.
 
-### Then run the index.php file
+or
+
+### Simply run the index.php file
